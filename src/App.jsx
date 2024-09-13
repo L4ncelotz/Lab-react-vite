@@ -24,7 +24,7 @@ export default function App() {
           />
         ) : (
           <img
-            src={"moodeng.jpg"}
+            src={"/assets/moodeng.jpg"}
             alt="หมูเด้ง"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
