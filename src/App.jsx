@@ -18,13 +18,13 @@ export default function App() {
       <div className="img-container" style={{ border: "2px dashed #999", width: "300px", height: "300px", display: "flex", justifyContent: "center", alignItems: "center" }}>
         {level >= 100 ? (
           <img
-            src="/src/img/cat.jpg"
+            src={"/src/img/cat.jpg"}
             alt="Special Image"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
         ) : (
           <img
-            src="/src/img/moodeng.jpg"
+            src={"/src/img/moodeng.jpg"}
             alt="หมูเด้ง"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
