@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "./assets/img/cat.png"
 
 export default function App() {
   const [level, setLevel] = useState(0);
@@ -18,7 +19,7 @@ export default function App() {
       <div className="img-container" style={{ border: "2px dashed #999", width: "300px", height: "300px", display: "flex", justifyContent: "center", alignItems: "center" }}>
         {level >= 100 ? (
           <img
-            src={"/public/cat.jpg"}
+            src={**Logo**}
             alt="Special Image"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
