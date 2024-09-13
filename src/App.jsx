@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Logo from "./assets/img/cat.png"
 
 export default function App() {
   const [level, setLevel] = useState(0);
@@ -19,13 +18,13 @@ export default function App() {
       <div className="img-container" style={{ border: "2px dashed #999", width: "300px", height: "300px", display: "flex", justifyContent: "center", alignItems: "center" }}>
         {level >= 100 ? (
           <img
-            src={**Logo**}
+            src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTausSYiAdZ2y-QfQnmEskFYH1Gf437HntopA&s"}
             alt="Special Image"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
         ) : (
           <img
-            src={"assets/Moodeng.jpg"}
+            src={"https://www.khaosod.co.th/wpapp/uploads/2024/09/Nong-Moo-Deng4548-5.jpg"}
             alt="หมูเด้ง"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
@@ -44,7 +43,7 @@ export default function App() {
           onClick={() => feedFood(10)}
         />
         <img
-          src={"/public/grass.jpg"}
+          src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYCv4LwD7f4uJB4mZsJAfHxYEW7zEItv6SQ&s"}
           alt="หญ้า"
           onClick={() => feedFood(20)}
         />
