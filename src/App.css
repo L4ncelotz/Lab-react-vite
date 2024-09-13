@@ -1,0 +1,42 @@
+import { useState } from "react";
+
+export default function App() {
+  const [level, setLevel] = useState(0);
+
+  const feedFood = (points) => setLevel(level + points);
+  const imageSize = 100 + level * 2;
+
+  return (
+    <div className="app">
+      <h1>Level {level}</h1>
+      
+      <div className="img-container">
+        <img 
+          src="/หมูเด้ง.jpg" 
+          alt="หมูเด้ง" 
+          style={{ width: `${imageSize}px`, height: `${imageSize}px` }} 
+        />
+      </div>
+
+      <div className="container">
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5uxYTYFKqYYENEa2DniSRG-HMc0eObhLymw&s" 
+          alt="แตงโม" 
+          onClick={() => feedFood(5)} 
+        />
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQuOiTeV3GLsunlvLi7GdBsc280rf_L-dUQQ&s" 
+          alt="ฟักทอง" 
+          onClick={() => feedFood(10)} 
+        />
+        <img 
+          src="/หญ้า.jpg" 
+          alt="หญ้า" 
+          onClick={() => feedFood(20)} 
+        />
+      </div>
+
+      {level >= 100 && <img src="/cat.jpg" alt="Special Image" />}
+    </div>
+  );
+}
