@@ -24,7 +24,7 @@ export default function App() {
           />
         ) : (
           <img
-            src="หมูเด้ง.jpg"
+            src="moodeng.jpg"
             alt="หมูเด้ง"
             style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
           />
@@ -43,7 +43,7 @@ export default function App() {
           onClick={() => feedFood(10)}
         />
         <img
-          src="หญ้า.jpg"
+          src="grass.jpg"
           alt="หญ้า"
           onClick={() => feedFood(20)}
         />
